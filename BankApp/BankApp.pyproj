@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>BankApp</Name>
     <RootNamespace>BancApp</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BankApp.py" />
+    <Compile Include="models\Accounts.py" />
+    <Compile Include="models\Banks.py" />
+    <Compile Include="models\Clients.py" />
+    <Compile Include="models\Transaction.py" />
+    <Compile Include="models\TransactionNetwork.py" />
+    <Compile Include="models\test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="models\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

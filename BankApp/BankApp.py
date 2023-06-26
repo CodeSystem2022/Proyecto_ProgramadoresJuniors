@@ -240,7 +240,7 @@ for bank_name in banelco_banks:
 cursor.execute(
     """
     INSERT INTO clients (id, name, address, phone, bank_id)
-    VALUES (1, 'Soel', 'El Moro 315', '2604306032', 1)
+    VALUES (1, 'Soel', 'El Moro 315', '2604306032', 5)
     """
 )
 
